@@ -1,4 +1,10 @@
-function sum (num1:number, num2:number){
-    return num1 + num2;
+import {rawg} from "./rawg";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const Client = new rawg(process.env.KEY)
+Client.creatorRoles.getCreatorRoles().then((data) => {
+    console.log(data)
 }
-console.log(sum(8,4))
+)
