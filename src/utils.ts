@@ -11,6 +11,6 @@ function encodeQueryData(data: {[key: string]:any} | undefined) {
  }
 
 export function urlBuilder(rawg: rawg, endpoint: string, params?: any) {
-    const url = rawg.baseUrl + endpoint + "?" + encodeQueryData(params);
+    const url = rawg.baseUrl + endpoint + "?" + encodeQueryData(params)+ "&key=" + rawg.key;
     return url;
 }
