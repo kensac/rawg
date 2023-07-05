@@ -6,6 +6,7 @@ import { genres } from "./endpoints/genres";
 import { platforms } from "./endpoints/platforms";
 import { publishers } from "./endpoints/publishers";
 import { stores } from "./endpoints/stores";
+import { tags } from "./endpoints/tags";
 
 export class rawg {
     readonly key: string
@@ -16,6 +17,7 @@ export class rawg {
     public platforms: platforms
     public publishers: publishers
     public stores: stores
+    public tags: tags
     baseUrl: string = "https://api.rawg.io/api/"
 
     constructor(key: string | undefined) {
@@ -30,6 +32,7 @@ export class rawg {
         this.platforms = new platforms(this);
         this.publishers = new publishers(this);
         this.stores = new stores(this);
+        this.tags = new tags(this);
     }
 
 }
