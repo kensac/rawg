@@ -2,13 +2,15 @@
   "name": "rawg",
   "version": "1.0.2",
   "description": "wrapper around the rawg API",
-  "main": "index.js",
+  "main": "./dist/rawg.js",
   "scripts": {
+    "prepublish": "npm run build",
     "test": "jest --detectOpenHandles",
     "test:watch": "jest --watch --detectOpenHandles",
     "coverage": "jest --coverage",
     "lint": "eslint --ext .js,.ts .",
-    "start": "ts-node ./src/index.ts"
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc"
   },
   "author": "kensac",
   "license": "ISC",
