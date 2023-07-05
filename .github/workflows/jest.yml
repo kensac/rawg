@@ -1,6 +1,4 @@
 name: Automatic Jest Test
-env:
-  KEY: ${{ secrets.KEY }}
 on: 
   push:
     branches:
