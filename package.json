@@ -16,6 +16,10 @@
   },
   "author": "kensac",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kensac/rawg.git"
+  },
   "devDependencies": {
     "@babel/preset-typescript": "^7.22.5",
     "@jest/globals": "^29.6.0",
