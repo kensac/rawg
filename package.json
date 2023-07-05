@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "wrapper around the rawg API",
   "main": "./dist/rawg.js",
+  "typings": "./dist/rawg.d.ts",
   "scripts": {
     "prepublish": "npm run build",
     "test": "jest --detectOpenHandles",
