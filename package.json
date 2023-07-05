@@ -1,6 +1,6 @@
 {
   "name": "rawg",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "wrapper around the rawg API",
   "main": "./dist/rawg.js",
   "typings": "./dist/rawg.d.ts",
