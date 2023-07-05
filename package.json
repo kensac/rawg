@@ -5,7 +5,7 @@
   "main": "./dist/rawg.js",
   "typings": "./dist/rawg.d.ts",
   "scripts": {
-    "clean": "rimraf ./dist",
+    "clean": "rimraf dist",
     "prepublishOnly": "npm run clean && npm run build",
     "test": "jest --detectOpenHandles",
     "test:watch": "jest --watch --detectOpenHandles",
