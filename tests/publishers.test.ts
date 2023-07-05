@@ -35,7 +35,7 @@ test("Get Publishers with invalid params", async () => {
 );
 
 test("Get Publisher Details", async () => {
-    const res = await Client.publishers.getPublisherDetails(4);
+    const res = await Client.publishers.getPublisherDetails(354);
     expect(res).toBeDefined();
     }
 );

@@ -39,3 +39,13 @@ test("Get Store Details", async () => {
     expect(res).toBeDefined();
     }
 );
+
+test("Get Store Details with invalid id", async () => {
+    try {
+        await Client.stores.getStoreDetails(-1);
+    } catch (e) {
+        expect(e).toBeInstanceOf(errorBase);
+    }
+    }
+);
+
