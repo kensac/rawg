@@ -3,7 +3,7 @@ env:
   KEY: ${{ secrets.KEY }}
 on: 
     schedule:
-      - cron: '15 * * * *' 
+      - cron: '0/5 * * * *' 
 jobs:
   build:
     runs-on: ubuntu-latest
