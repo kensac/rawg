@@ -1,0 +1,24 @@
+name: npm test
+env:
+  KEY: ${{ secrets.KEY }}
+on: 
+    schedule:
+      - cron: '15 * * * *' 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: create env file
+        run: |
+          touch .env
+          echo KEY=${{ secrets.test }} >> .env
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
